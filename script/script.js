@@ -46,6 +46,7 @@ genera.addEventListener("click", function () {
     }
 
     inputName.value = "";
+    inputKm.value = "";
     /*numero carrozza*/
     let y = Math.floor((Math.random() * 10) + 1);
     randomCar.innerText = y;
@@ -61,15 +62,16 @@ genera.addEventListener("click", function () {
 
 
 
-    if (age === adulto) {
+    if (age === "adulto") {
         result.innerText = normalPrice;
         let sconto = (normalPrice * 0)
+        console.log(normalPrice)
 
-    } else if (age === minorenne) {
+    } else if (age === "minorenne") {
         let sconto = (normalPrice * 0.2)
         result = (normalPrice - sconto)
 
-    } else if (age === over) {
+    } else if (age === "over") {
         let sconto = (normalPrice * 0.4)
         result = (normalPrice - sconto)
     }
