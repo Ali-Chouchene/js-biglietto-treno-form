@@ -98,10 +98,10 @@ genera.addEventListener("click", function () {
 // //.6
 
 // //price
-// targetPrice.innerText = `${result.toFixed(2)}`;
+// targetPrice.innerText = `${ result.toFixed(2) } `;
 // //age
-// targetAge.innerText = `${userAge} `;
+// targetAge.innerText = `${ userAge } `;
 // //km
-// targetKm.innerText = `${userKm} `;
+// targetKm.innerText = `${ userKm } `;
 // //sconto
-// targetSold.innerText = `${sconto.toFixed(2)}`;
+// targetSold.innerText = `${ sconto.toFixed(2) } `;
