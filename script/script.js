@@ -46,7 +46,7 @@ genera.addEventListener("click", function () {
     }
 
     inputName.value = "";
-    inputKm.value = "";
+
     /*numero carrozza*/
     let y = Math.floor((Math.random() * 10) + 1);
     randomCar.innerText = y;
@@ -59,7 +59,6 @@ genera.addEventListener("click", function () {
 
     x = 0.21;
     const normalPrice = (x * inputKm.value);
-    console.log(normalPrice);
 
 
     if (age.value === "adulto") {
@@ -79,7 +78,7 @@ genera.addEventListener("click", function () {
         /*offerta*/
 
     }
-
+    inputKm.value = "";
 });
 
 
