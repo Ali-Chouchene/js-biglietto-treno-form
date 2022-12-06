@@ -57,28 +57,28 @@ genera.addEventListener("click", function () {
 
     /*prezzo*/
 
-    const x = 0.21;
-    const normalPrice = (inputKm * x);
+    x = 0.21;
+    const normalPrice = (x * inputKm.value);
+    console.log(normalPrice);
 
 
-
-    if (age === "adulto") {
+    if (age.value === "adulto") {
         result.innerText = normalPrice;
-        let sconto = (normalPrice * 0)
-        console.log(normalPrice)
+        sconto.innerText = (normalPrice * 0);
 
-    } else if (age === "minorenne") {
-        let sconto = (normalPrice * 0.2)
-        result = (normalPrice - sconto)
 
-    } else if (age === "over") {
-        let sconto = (normalPrice * 0.4)
-        result = (normalPrice - sconto)
+    } else if (age.value === "minorenne") {
+        result.innerText = (normalPrice * 0.8).toFixed(2);
+        sconto.innerText = (normalPrice * 0.2).toFixed(2);
+
+
+    } else if (age.value === "over") {
+        result.innerText = (normalPrice * 0.6).toFixed(2);
+        sconto.innerText = (normalPrice * 0.4).toFixed(2);
+
+        /*offerta*/
+
     }
-
-    /*offerta*/
-
-
 
 });
 
